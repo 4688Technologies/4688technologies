@@ -33,11 +33,11 @@ const Footer: React.FC = () => {
             <div className="footer__contact">
               <div className="contact-item">
                 <MapPin size={16} />
-                <span>123 Tech Avenue, Innovation District, Abuja</span>
+                <span>Abuja, Nigeria</span>
               </div>
               <div className="contact-item">
                 <Phone size={16} />
-                <span>+234 800 4688 000</span>
+                <span>+234 806 584 0512</span>
               </div>
               <div className="contact-item">
                 <Mail size={16} />
