@@ -1,0 +1,110 @@
+@import '../../styles/Button.scss';
+
+.about {
+  background: var(--primary-cream);
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 80px;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 48px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__text {
+    .section-title,
+    .about__feature-title {
+      color: var(--brand-blue);
+    }
+
+    .section-subtitle {
+      color: var(--brand-blue);
+      text-align: left;
+      margin-bottom: 32px;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
+      margin-bottom: 40px;
+    }
+  }
+
+  &__description {
+    p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: var(--text-light);
+      text-align: justify;
+      margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__image {
+    img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px var(--shadow);
+    }
+  }
+
+  &__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 48px;
+
+    @media (max-width: 768px) {
+      gap: 40px;
+    }
+  }
+
+  &__feature {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 8px 25px var(--shadow);
+    transition: var(--transition);
+
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 16px 40px var(--shadow);
+    }
+
+    &-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 80px;
+      height: 80px;
+      background: var(--brand-blue-dark);
+      color: var(--white);
+      border-radius: 50%;
+      margin-bottom: 24px;
+    }
+
+    &-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--brand-blue);
+      margin-bottom: 16px;
+    }
+
+    &-description {
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+  }
+
+}

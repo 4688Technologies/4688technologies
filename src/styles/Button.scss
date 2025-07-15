@@ -1,0 +1,58 @@
+.btn {
+  background: var(--brand-blue);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(30, 58, 138, 0.10);
+  outline: none;
+  &:hover, &:focus {
+    background: var(--brand-blue-dark);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--brand-blue);
+  border: 2px solid var(--brand-blue);
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(30, 58, 138, 0.08);
+  outline: none;
+  &:hover, &:focus {
+    background: var(--brand-blue-dark);
+    color: #fff;
+    border-color: var(--brand-blue-dark);
+    text-decoration: none;
+  }
+}
+
+.btn-hero-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid var(--brand-blue);
+  border-radius: 8px;
+  padding: 0.75rem 2rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 12px rgba(30, 58, 138, 0.08);
+  outline: none;
+  &:hover, &:focus {
+    background: var(--brand-blue);
+    color: #fff;
+    border-color: var(--brand-blue-dark);
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,44 @@
+.services {
+  .section-title {
+    color: var(--brand-blue);
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  &__item {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 2px 12px rgba(44, 62, 80, 0.06);
+    padding: 2rem 1.5rem;
+    width: 260px;
+    text-align: center;
+    transition: box-shadow 0.2s;
+    &:hover {
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+    }
+  }
+  &__icon {
+    color: var(--brand-blue);
+    margin: 0 auto 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    width: 48px;
+    height: 48px;
+  }
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--brand-blue);
+  }
+  &__description {
+    color: #555;
+    font-size: 1rem;
+  }
+}

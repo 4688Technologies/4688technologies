@@ -1,0 +1,121 @@
+:root {
+  --brand-blue: rgb(30 58 138 / 1);
+  --brand-blue-dark: rgb(20 40 100 / 1);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  transition: var(--transition);
+  border-bottom: 1px solid transparent;
+
+  &--scrolled {
+    background: var(--white);
+    box-shadow: 0 2px 20px var(--shadow);
+    border-bottom-color: #e5e5e5;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+  }
+
+  &__logo {
+    h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--brand-blue);
+      margin: 0;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 32px;
+    a {
+      color: var(--brand-blue);
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s;
+      &:hover, &:focus {
+        color: var(--brand-blue-dark);
+        text-decoration: underline;
+      }
+    }
+
+    @media (max-width: 768px) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #fff;
+      box-shadow: 0 8px 32px rgba(30,58,138,0.15);
+      width: 100vw;
+      height: 100vh;
+      overflow-y: auto;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 48px;
+      transform: translateX(-100%);
+      transition: var(--transition);
+
+      &--open {
+        transform: translateX(0);
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--brand-blue);
+      font-weight: 500;
+      font-size: 16px;
+      transition: var(--transition);
+      position: relative;
+
+      &:hover {
+        color: var(--brand-blue-dark);
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--brand-blue-dark);
+        transition: var(--transition);
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+    z-index: 1001;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+}
