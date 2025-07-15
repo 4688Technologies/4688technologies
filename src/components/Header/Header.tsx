@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '/public/images/4688-logo.jpeg';
 import { Menu, X } from 'lucide-react';
 import './Header.scss';
 
@@ -28,9 +29,9 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header__content">
           <div className="header__logo" style={{display:'flex', alignItems:'center'}}>
-  <img src="/images/4688-logo.jpeg" alt="4688 Technologies Logo" style={{height:48, width:48, marginRight:16}} />
-  <h1 style={{margin:0}}>4688 Technologies</h1>
-</div>
+            <img src={logo} alt="4688 Technologies Logo" style={{height:48, width:48, marginRight:16}} />
+            <h1 style={{margin:0}}>4688 Technologies</h1>
+          </div>
           
           <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
             <a href="#home" onClick={() => scrollToSection('home')}>Home</a>

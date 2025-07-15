@@ -27,7 +27,7 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const recipient = 'info@4688technologies.com';
+    const recipient = '4688technologies@gmail.com';
     const subject = encodeURIComponent(`Business Inquiry from ${formData.name}`);
     const body = encodeURIComponent(
       `Name: ${formData.name}\n` +
