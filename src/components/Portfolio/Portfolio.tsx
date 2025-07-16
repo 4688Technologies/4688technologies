@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import IDCardSystemImg from '/public/images/ID-card-system.png';
 import { ExternalLink, Github } from 'lucide-react';
 import './Portfolio.scss';
 
@@ -15,7 +16,7 @@ const projects = [
   {
     title: 'ID Card System',
     description: 'A robust ID Card management system for schools, featuring secure card generation, student/staff database integration, and real-time validation. Built with React, Node.js, and MongoDB.',
-    image: '/images/ID-card-system.png',
+    image: IDCardSystemImg,
     technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
     liveUrl: '#',
     githubUrl: '#'
