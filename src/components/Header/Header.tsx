@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from '/public/images/4688-logo.jpeg';
+import logo from '/public/images/4688-logo.svg';
 import { Menu, X } from 'lucide-react';
 import './Header.scss';
 
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
       <div className="container">
         <div className="header__content">
           <div className="header__logo" style={{display:'flex', alignItems:'center'}}>
-            <img src={logo} alt="4688 Technologies Logo" style={{height:48, width:48, marginRight:16}} />
+            <img src={logo} alt="4688 Technologies Logo" style={{height:60, width:60, marginRight:16}} />
             <h1 style={{margin:0}}>4688 Technologies</h1>
           </div>
           

@@ -1,7 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock, Facebook, Instagram, Twitter } from 'lucide-react';
 import './Footer.scss';
-import logo from '/public/images/4688-logo.jpeg';
+import logo from '/public/images/4688-logo-footer.svg';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       <div className="container">
         <div className="footer__content">
           <div className="footer__section">
-            <div style={{display:'flex', alignItems:'center', gap:'0.5rem'}}><img src={logo} alt="4688 Technologies Logo" style={{height:48, width:48}} /><h3 className="footer__title" style={{margin:0}}>4688 Technologies</h3></div>
+            <div style={{display:'flex', alignItems:'center', gap:'0.5rem'}}><img src={logo} alt="4688 Technologies Logo" style={{height:60, width:60}} /><h3 className="footer__title" style={{margin:0}}>4688 Technologies</h3></div>
             <p className="footer__description">
               Driving business growth with innovative technology solutions. <br/>
               Software Development, IT Infrastructure, Networking, Cybersecurity, Mobile Development, and more.

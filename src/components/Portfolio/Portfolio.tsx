@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import IDCardSystemImg from '/public/images/ID-card-system.png';
-import { ExternalLink, Github } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import './Portfolio.scss';
 
 const projects = [
@@ -123,14 +123,7 @@ const Portfolio: React.FC = () => (
                   >
                     <ExternalLink size={20} className="text-gray-700" />
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    className="p-2 bg-white rounded-full shadow-lg hover:shadow-xl transition-shadow duration-200"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github size={20} className="text-gray-700" />
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -158,15 +151,7 @@ const Portfolio: React.FC = () => (
         viewport={{ once: true }}
         className="text-center mt-12"
       >
-        <a
-          href="https://github.com/Al-AmeenMD"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn inline-flex items-center space-x-2" style={{ background: 'var(--brand-blue)', color: '#fff', border: 'none' }}
-        >
-          <Github size={20} />
-          <span>View More on GitHub</span>
-        </a>
+        
       </motion.div>
     </div>
   </section>
