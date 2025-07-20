@@ -1,5 +1,12 @@
 @import '../../styles/Button.scss';
 
+.hide-on-mobile {
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+
+
 .about {
   background: #f7fafd;
 

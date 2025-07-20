@@ -49,7 +49,7 @@ const About: React.FC = () => {
             </div>
           </div>
 
-          <div className="about__image">
+          <div className="about__image hide-on-mobile">
             <img 
               src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
               alt="Modern technology team at work"
