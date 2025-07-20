@@ -33,7 +33,7 @@ const About: React.FC = () => {
           <div className="about__text">
             <h2 className="section-title">About Us</h2>
             <p className="section-subtitle">
-              Empowering businesses through technology
+              Smart Tech. Real Solutions.
             </p>
             
             <div className="about__description">
